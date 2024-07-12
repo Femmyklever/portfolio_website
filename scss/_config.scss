@@ -1,0 +1,22 @@
+// Variables
+$website-width : 1280px;
+$main-color: #008080;
+$light-color: #f4f4f4;
+$medium-color: #ccc;
+$dark-color: #333;
+$bg-img: url('../img/Keyboard-2.jpg');
+
+// Bouncing variables
+
+$bounce-duration:5s;
+$bounce-timing: infinite;
+$bounce-smooth: ease-in-out ;
+
+// Set Text Color
+@function set-text-color($color){
+  @if(lightness($color) >50){
+    @return #000
+  }@else {
+    @return #fff
+  }
+}
