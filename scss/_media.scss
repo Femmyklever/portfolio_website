@@ -33,10 +33,21 @@
   }
   #header{
     &-home{
-      height: 10rem;
+      height: 45rem;
       border-bottom: 3px solid $main-color;
       .header-content{
-        display: none;
+        padding-top: 10rem;
+       
+        h1{
+          font-size: 3.5rem;
+          .small-lead{
+            font-size: 1rem;
+          }
+        }
+        p{
+          font-size: 1rem;
+        }
+       
       }
     }
     &-inner{
@@ -45,7 +56,15 @@
   }
   // Stack Grid Columns
   // Home
-  #home-a .specials, #home-b .stats,#home-c .process, #about-d .testimonials,#contact-b .contact-info, .items{
+  #home-c .process{
+    grid-template-columns: repeat(2,1fr);
+  }
+  .process{
+ 
+    padding: .5rem .75rem;
+  }
+
+  #home-a .specials, #home-b .stats, #about-d .testimonials,#contact-b .contact-info, .items{
     grid-template-columns: 1fr;
   }
 

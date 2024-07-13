@@ -225,11 +225,15 @@ img {
   &-c{
     .process{
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(3, 1fr);
       gap: 1.5rem;
       text-align: center;
      
       // Process - step
+      h3{
+        color: $main-color;
+        padding-top: 2rem;
+      }
 
       &-step{
         position: absolute;
@@ -418,7 +422,7 @@ img {
 // Footer
 #main-footer{
   background: $dark-color;
-  color: #fff;
+  color: $main-color;
   height: 5rem;
   .footer-content{
     display: flex;
@@ -426,6 +430,7 @@ img {
     height: 5rem;
     align-items: center;
     .social .fab{
+      color: #fff;
       margin-right: 1rem;
       border: 2px white solid;
       border-radius: 50%;
